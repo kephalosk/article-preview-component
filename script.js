@@ -58,4 +58,14 @@ document.addEventListener('DOMContentLoaded', () => {
             circle.classList.remove('selected');
         });
     }
+
+    document.addEventListener('keydown', function (event) {
+        const focusedElement = document.activeElement;
+
+        if (focusedElement.tagName === 'A') {
+            if (event.key === 'Enter' || event.key === ' ') {
+                window.open(focusedElement.href, '_blank');
+            }
+        }
+    })
 });

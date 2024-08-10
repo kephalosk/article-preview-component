@@ -100,6 +100,11 @@
     }
 }
 
+.cardBoxBarRightCircle:focus {
+    background-color: hsl(210, 46%, 85%);
+    outline: none;
+}
+
 .cardBoxBarRightCircle:hover {
     background-color: hsl(210, 46%, 85%);
 }
