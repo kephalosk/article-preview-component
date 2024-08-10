@@ -167,6 +167,19 @@ circle.classList.remove('selected');
 }
 ```
 
+I learned to open a link per keydown:
+```javascript
+    document.addEventListener('keydown', function (event) {
+        const focusedElement = document.activeElement;
+
+        if (focusedElement.tagName === 'A') {
+            if (event.key === 'Enter' || event.key === ' ') {
+                window.open(focusedElement.href, '_blank');
+            }
+        }
+    })
+```
+
 I learned to switch between components based on screensize and click-state.
 
 I improved html, css and javascript skills in general.
